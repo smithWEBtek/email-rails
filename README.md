@@ -1,3 +1,9 @@
+This repo and code was created by following this blog: 
+https://launchschool.com/blog/handling-emails-in-rails
+
+
+
+
 # README
 
 This README would normally document whatever steps are necessary to get the
