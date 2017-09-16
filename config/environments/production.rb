@@ -64,16 +64,15 @@ Rails.application.configure do
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
 
-config.action_mailer.delivery_method = :smtp
-# SMTP settings for gmail
-config.action_mailer.smtp_settings = {
- :address              => "smtp.mailgun.org",
- :port                 => 587,
- :user_name            => ENV['brad@sandbox7456adfb54af4bb4a710f37f0760a1e4.mailgun.org'],
- :password             => ENV['d58dfeb634652d7acc973452b90c9a7d'],
- :authentication       => "plain",
-:enable_starttls_auto => true
-}
+	# **********************
+	# **********************
+	# **********************
+	# **********************
+# config.action_mailer.delivery_method = :smtp
+# GET THIS INFO FROM .ENV FILE 
+# **********************
+# **********************
+# **********************
 
   config.active_job.queue_adapter = :delayed_job
 
