@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
 
   def email
-		RestClient.post "https://api:key-5b783bdac4ff6080aa78870e48d6b835"\
+		RestClient.post "https://api:" + MAILGUN_API_KEY + "\
 		"@api.mailgun.net/v3/sandbox7456adfb54af4bb4a710f37f0760a1e4.mailgun.org/messages",
 		:from => "Mailgun Sandbox <postmaster@sandbox7456adfb54af4bb4a710f37f0760a1e4.mailgun.org>",
 		:to => "Brad Smith <brad@smithwebtek.com>",
